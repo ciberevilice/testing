@@ -1,0 +1,71 @@
+/* Страница авторизации */
+
+.pageAuth {
+    background-color: black;
+}
+
+.authForm {
+    background-color: darkmagenta;
+    width: 20%;
+    height: 100px;
+    margin-left: 40%;
+    margin-top: 20%;
+}
+
+.log {
+    width: 90%;
+    height: 3em;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.authBtn {
+    width: 90%;
+    height: 60px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+/*Главная страница*/
+
+.mainFrame {
+    background-color: yellow;
+    min-height: 860px;
+    min-width: 1280px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.navigation {
+    width: 100%;
+    height : auto;
+    background-color: black;
+    color: white;
+}
+
+.nav {
+    font-family: Verdana;
+    font-size: 2rem;
+}
+
+.nav > li{
+    display: inline-block;
+    margin-right: 5%;
+    text-decoration: none;
+    border-left: 1px solid white;
+}
+
+.menuMain {
+    width: 100%;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    border-radius: 0.5em;
+    margin-left: 30%;
+    border-color: greenyellow;
+}
+
+
