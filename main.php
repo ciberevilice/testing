@@ -48,7 +48,7 @@ $user = $_SESSION['login'];
                         <!--<a href = ""><?=$user?></a>-->
                     </li>
                     <li>
-                        <button class="menuMain" onclick="urlAction()">Выход</button>
+                        <button class="menuMain" onclick="location.href ='index.php'">Выход</button>
                         <!--<a href = "">Выход</a>-->
                     </li>
                 </ul>
@@ -61,5 +61,10 @@ $user = $_SESSION['login'];
             </div>
 
         </div>
+        <script>
+            function urlAdd() {
+                location.href="#";
+            }
+        </script>
     </body>
 </html>

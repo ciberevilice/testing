@@ -1,5 +1,4 @@
-var attr = document.getElementsByClassName(menuMain);
 
 function urlAction() {
-
+    location.href = 'index.php';
 }

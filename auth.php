@@ -18,8 +18,6 @@ $pass = $_POST['pass'];
 $auth = new auth();
 $auth->getUser();
 
-
-
 class auth {
     private $lgn;
     private $pass;
@@ -31,22 +29,28 @@ class auth {
         $query = "SELECT * FROM `user` WHERE `login` = '".$lgn."' AND  `pass` = '".$pass."'";
         $row = $db->query($query);
 
+        //Проверка полученных данных на их наличие
         if (!$row) {
-            echo 1;
+            $page = new page();
+            $page->badLogin();
         }else
+            //Сортировка массива
             foreach ($row as $data) {
-          //  print_r($data);
         }
+        //Проверка отсортированного массива на наличие данных
         if ($data == null) {
-            echo 3;
+            $page = new page();
+            $page->badLogin();
         } else {
+            //Условие на вход
             if ($lgn == $data['login'] and $pass = $data['pass']) {
                 $_SESSION['idlogin'] = $data['iduser'];
                 $_SESSION['login'] = $data['login'];
                 $page = new page();
                 $page->mainPage();
             } else {
-                echo 5;
+                $page = new page();
+                $page->badLogin();
             }
         }
     }

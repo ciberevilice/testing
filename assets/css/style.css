@@ -1,31 +1,49 @@
 /* Страница авторизации */
 
 .pageAuth {
-    background-color: black;
+    background-image: url("../img/bg.gif");
 }
 
 .authForm {
-    background-color: darkmagenta;
-    width: 20%;
+    width: 30%;
+    height: auto;
+    margin-left: 35%;
+    margin-top: 15%;
+    border: 1px solid gray;
+    border-radius: 1rem;
+}
+
+.logoImg {
+    width: 100px;
     height: 100px;
-    margin-left: 40%;
-    margin-top: 20%;
+}
+
+.logo {
+    float: left;
+    margin-left: 35%;
 }
 
 .log {
     width: 90%;
     height: 3em;
+    font-size: 1em;
     margin-left: 5%;
     margin-top: 5%;
     border-radius: 1rem;
     text-align: center;
+    border-color: white;
+    background-color: lightgray;
 }
 
 .authBtn {
-    width: 90%;
-    height: 60px;
-    margin-left: 5%;
+    width: 50%;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    margin-left: 25%;
     margin-top: 5%;
+    background-color: lightgray;
+    border-color: lightgray;
+    border-radius: 1rem;
 }
 
 /*Главная страница*/

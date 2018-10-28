@@ -14,8 +14,11 @@ $title = "SiteName";
     </head>
     <body class="pageAuth">
         <div class="authForm">
+            <div class="logo">
+                <img src="assets/img/logo.png" class="logoImg">
+            </div>
             <form method="post" action="auth.php">
-                <input type="text" name="lgn" placeholder="Введите логин" class="log">
+                <input type="text" name="lgn" placeholder="Введите логин" class="log" autofocus>
                 <input type="password" name="pass" placeholder="Введите пароль" class="log">
                 <input type="submit" value="Войти" class="authBtn">
             </form>

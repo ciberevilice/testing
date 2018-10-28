@@ -13,7 +13,7 @@ class page
     }
 
     function badLogin() {
-
+        header('location: ../../index.php');
     }
 
     function loginPage() {
